@@ -1,0 +1,1 @@
+#This is a basic javascript calculator developed using the simplest form of javascript functions and DOM manipulation.
