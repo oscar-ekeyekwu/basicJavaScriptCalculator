@@ -1,0 +1,126 @@
+body {
+  background: rgba(113, 154, 231, 0.3);
+}
+h1 {
+  text-align: center;
+}
+.calculator {
+  display: block;
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background: #17223b;
+  margin: auto;
+}
+#operation-screen {
+  display: block;
+  text-align: right;
+  font-weight: bolder;
+  position: absolute;
+  width: 375px;
+  height: 170px;
+  left: 0px;
+  top: 24px;
+  background: #17223b;
+  border-bottom: 3px solid rgba(113, 154, 231, 0.08);
+  margin-bottom: 0px;
+}
+
+#result-screen {
+  text-align: right;
+  position: absolute;
+  width: 375px;
+  height: 77px;
+  left: 0px;
+  top: 213px;
+  background: #17223b;
+  padding-bottom: 2%;
+  border-bottom: 3px solid rgba(113, 154, 231, 0.2);
+}
+
+#operation-holder {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 1.93%;
+  bottom: 69.11%;
+  padding-right: 20px;
+
+  font-family: 'Lucida Console', Courier, monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  /* identical to box height */
+  color: #ffffff;
+}
+#result-holder {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  padding-right: 20px;
+
+  font-family: 'Lucida Console', Courier, monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 46px;
+  /* identical to box height */
+
+  color: #ffffff;
+  opacity: 0.51;
+}
+.numsDiv {
+  position: absolute;
+  width: 328px;
+  height: 343px;
+  left: 23px;
+  top: 330px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.btn {
+  background: #6b778d;
+  border: 0px;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.num,
+#abs {
+  color: white;
+}
+#clrBtn {
+  color: #17223b;
+}
+.optors,
+#bkspc {
+  color: #ff6768;
+}
+#eqBtn {
+  background: #ff6768;
+  color: white;
+}
+#tabs {
+  display: flex;
+  position: absolute;
+  top: 760px;
+  justify-content: center;
+  margin: 0px 50px;
+}
+#tabs > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px 8px;
+  text-align: center;
+}
+.active {
+  border-bottom: 2px solid #ff6768;
+}
