@@ -1,9 +1,7 @@
 body {
   background: rgba(113, 154, 231, 0.3);
 }
-h1 {
-  text-align: center;
-}
+
 .calculator {
   display: block;
   position: relative;
