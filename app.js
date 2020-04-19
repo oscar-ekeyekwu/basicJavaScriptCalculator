@@ -49,7 +49,9 @@ const bkspc = document.getElementById('bkspc');
 bkspc.addEventListener('click', function () {
   if (operation_holder.innerHTML != '') {
     operation_holder.innerHTML = operation_holder.innerHTML.slice(0, -1);
-    result_holder.innerHTML = eval(operation_holder.innerHTML);
+    operation_holder.innerHTML == ''
+      ? (result_holder.innerHTML = 0)
+      : (result_holder.innerHTML = eval(operation_holder.innerHTML));
   } else {
     operation_holder.innerHTML = '';
     result_holder.innerHTML = '';
